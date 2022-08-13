@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f5fc;
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor-total{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 50px 0 50px;
+}
+
+.contenedor-logo{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+}
+
+textarea{
+    border: none;
+    background-color: transparent;
+}
+
+.contenedor-botones p i{
+    margin: 0 3px;
+}
+
+@media only screen and (max-width: 1279px){
+
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor-total{
+        flex-wrap: wrap;
+        padding: 0%;
+        height: 580px;
+    }
+}
+
+/* **************  Mitad INPUT *****************  */
+
+.contenedor-input{
+    width: 60%;
+    padding: 50px;
+    text-align: center;
+}
+
+.texto-input{
+    width: 80%;
+    height: 250px;
+}
+
+.boton{
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+    border: 1px solid #0a3871;
+    border-radius: 10%;
+    background-color: #0a3871;
+    color: #ced4da;
+}
+
+.uno{
+    background-color: #0a3871;
+    color: #ced4da;
+}
+
+.dos{
+    background-color: #e9ecf8;
+    color: #0a3871;
+}
+
+@media only screen and (max-width: 1279px){
+    .contenedor-input{
+        padding: 20px;
+    }
+    .boton{
+        width: 130px;
+    }   
+}
+
+
+@media only screen and (max-width: 600px){
+    .contenedor-input{
+        width: 100%;
+        padding: 10px;
+    }
+    .texto-input{
+        height: 150px;
+    }
+    .contenedor-botones{
+        width: 100%;
+        padding: 5px;
+    }
+    .boton{
+        width: 120px;
+        text-align: center;
+    }
+}
+
+/* ************  Mitad OUTPUT ******************* */
+
+.contenedor-output{
+    width: 40%;
+    padding: 50px;
+    background-color: #e9ecf8;
+    border-radius: 3%;
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor-output{
+        width: 100%;
+        max-height: auto;
+        padding: 0%;
+    }   
+}
+
+/* ************** OUTPUT oculto ************** */
+.output-inicial{
+    display: block;
+    text-align: center;
+}
+
+.output-inicial img{
+    margin: auto;
+}
+
+.caja-output{
+    display: none;
+    text-align: center;
+}
+
+.texto-output{
+    min-height: 300px;
+    width: 100%;
+}
+
+.copiar{
+    background-color: #eee;
+    color: rgb(32, 67, 165);
+    vertical-align: bottom; 
+}
+
+@media only screen and (max-width: 1279px){
+    .output-inicial img{
+        max-width: 100%;
+    }   
+}
+
+
+@media only screen and (max-width: 600px){
+    .output-inicial img{
+        display: none;
+    }
+    .caja-output{
+        height: fit-content;
+    }
+    .texto-output{
+        min-height: 100px;
+        width: 90%;
+        margin: 5px auto;
+    }
+}
+
+footer p{
+    text-align: center;
+}

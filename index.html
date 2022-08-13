@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4296a49a20.js" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="estilos.css">
+        <title>Encriptador</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="contenedor-logo">
+                <img src="img/Logo.png">
+            </div>
+            
+        </header>
+
+        <div class="contenedor-total">
+
+
+            <section class="contenedor-input">
+                <h2>Ingrese el texto aquí</h2>
+                <textarea class="texto-input" id="texto-input"></textarea>
+                </textarea>
+                <div class="contenedor-botones">
+                    <p><i class="fa-solid fa-circle-exclamation"></i>Solo letras minúsculas y sin acentos</p>
+                    <button class="boton uno"  onclick="encriptar()">Encriptar</button>
+                    <button class="boton dos" onclick="desencriptar()">Desencriptar</button>
+                    <button type="reset" value="clear" class="reset">Restaurar</button>
+                </div>
+            </section>
+    
+            <section class="contenedor-output">
+                <div class="output-inicial" id="output-inicial">
+                    <img src="img/Muñeco.png">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                
+                <!-- Caja de OUTPUT -->
+
+                <div class="caja-output" id="caja-output">
+                    <textarea class="texto-output" id="output"></textarea>
+                    <button class="boton copiar" onclick="copiar()">Copiar</button>
+                </div>
+
+            </section>
+
+
+        </div>
+
+        <footer>
+            <p> Desarrollado por : Federico Guerrero - Agosto 2022</p>
+        </footer>
+
+
+        <script src="encriptar.js"></script>
+       <!--  <script src="desencriptar.js"></script>
+        <script src="copiar.js"></script> -->
+        
+
+    </body>
+
+
+</html>
