@@ -35,7 +35,7 @@ function desencriptar() {
   var y = document.getElementById("caja-output");
 
   let frase2 = frase.slice();
-  frase3 =frase2.replace(/ai/,'a').replace(/enter/,'e').replace(/imes/,'i').replace(/ober/g,'o').replace(/ufat/,'u');
+  frase3 =frase2.replace(/ai/g,'a').replace(/enter/g,'e').replace(/imes/g,'i').replace(/ober/g,'o').replace(/ufat/g,'u');
   console.log(frase3)
   document.getElementById("output").innerHTML = frase3;
   x.style.display = "none";
