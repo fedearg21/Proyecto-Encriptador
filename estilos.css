@@ -75,6 +75,10 @@ textarea{
     color: #0a3871;
 }
 
+.reset{
+    display:none;
+}
+
 @media only screen and (max-width: 1279px){
     .contenedor-input{
         padding: 20px;
